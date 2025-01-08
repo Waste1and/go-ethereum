@@ -126,7 +126,7 @@ func (miner *Miner) SetGasTip(tip *big.Int) error {
 }
 
 // BuildPayload builds the payload according to the provided parameters.
-func (miner *Miner) BuildPayload(args *BuildPayloadArgs, witness bool) (*Payload, error) {
+func (miner *Miner) OBuildPayload(args *BuildPayloadArgs, witness bool) (*Payload, error) {
 	return miner.buildPayload(args, witness)
 }
 
